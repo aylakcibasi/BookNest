@@ -41,6 +41,14 @@ html,body{color:#302820}
 #main{color:#302820!important;position:relative;isolation:isolate}
 #main *{-webkit-text-fill-color:currentColor}
 #main button{-webkit-text-fill-color:currentColor}
+</style><style id="booknest-visibility-emergency-fix">
+/* Ana içerik için zorunlu görünür metin renkleri */
+#main{color:#302820!important;-webkit-text-fill-color:#302820!important;opacity:1!important;visibility:visible!important;filter:none!important;mix-blend-mode:normal!important}
+#main *{color:#302820!important;-webkit-text-fill-color:#302820!important;opacity:1!important;visibility:visible!important;text-shadow:none!important}
+#main button,#main button *{color:#fff!important;-webkit-text-fill-color:#fff!important}
+#main button.secondary,#main button.secondary *,#main button.ghost,#main button.ghost *{color:#4d392b!important;-webkit-text-fill-color:#4d392b!important}
+#main .muted,#main .footer-note,#main .book-card p,#main .stat small{color:#655c52!important;-webkit-text-fill-color:#655c52!important}
+#main .badge{color:#69452f!important;-webkit-text-fill-color:#69452f!important}
 </style></style></head><body><div class="shell"><aside class="sidebar"><div class="brand"><span class="brand-mark">B</span><span class="brand-word">BookNest</span></div><nav class="nav"><button class="active" data-view="home">⌂ Ana sayfa</button><button data-view="library">▤ Kitaplarım</button><button data-view="reading">◷ Okuma zamanı</button><button data-view="shelves">▣ Kitaplıklar</button><button data-view="stats">▤ İstatistikler</button></nav><div id="account-panel" class="card" style="padding:13px;background:#30483d;border-color:#486153;color:#eef3ed;box-shadow:none"><div id="account-status" style="font-size:12px;margin-bottom:9px">Misafir modu · Veriler bu cihazda</div><button class="small" style="width:100%" onclick="openAccount()">E-posta ile eşitle</button></div><div class="sidebar-bottom">Kişisel okuma alanın<br>Giriş yapmadan da kullanabilirsin.</div></aside><main class="main" id="main"></main></div><div id="modal-root"></div><script>
 window.addEventListener('error',function(e){
   var m=document.getElementById('main');
